@@ -1,4 +1,7 @@
-![visualbosslogo](https://github.com/specowos/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true)
+<p align="center">
+  <img src="https://github.com/specowos/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true" alt="visualbosslogo"/>
+</p>
+
 # VISUALBOSS
 ## It's FREE! *and open source
 
