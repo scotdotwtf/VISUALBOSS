@@ -44,4 +44,5 @@ getgenv().config = {
         ["time"] = 0
     }
 }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/VISUALBOSS/main/source.lua"))()
 ```
