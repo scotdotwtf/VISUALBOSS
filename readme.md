@@ -1,3 +1,4 @@
+![visualbosslogo](https://github.com/specowos/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true)
 # VISUALBOSS
 ## It's FREE! *and open source
 
