@@ -44,5 +44,4 @@ getgenv().config = {
         ["time"] = 0
     }
 }
-
 ```
