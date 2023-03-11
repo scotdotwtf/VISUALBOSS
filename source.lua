@@ -1,13 +1,29 @@
 --<VISUALBOSS 1.0>--
 -- *spec
 
---[[ GOOD FORCEFIELD OVERLAYS:
-    lightning http://www.roblox.com/asset/?id=247707592
-    scratch http://www.roblox.com/asset/?id=6248583558
-    dots http://www.roblox.com/asset/?id=6665227233
-    water http://www.roblox.com/asset/?id=12734728683
-    energy http://www.roblox.com/asset/?id=12734767170
-]]
+-- EXPECT CHANGES! this is the first release of VISUALBOSS with no ui or anything special.
+
+--// remove old instances
+if game:GetService("Lighting"):FindFirstChild("SkyBox") then game:GetService("Lighting").SkyBox:Destroy() end
+if game:GetService("CoreGui"):FindFirstChild("logoroot") then game:GetService("CoreGui").logoroot:Destroy() end
+
+--// script
+if config.script.watermark then
+    local logoroot = Instance.new("ScreenGui")
+    logoroot.Name = "logoroot"
+    logoroot.Parent = game:GetService("CoreGui")
+
+    local logo = Instance.new("ImageLabel")
+    logo.Name = "logo"
+    logo.Image = "http://www.roblox.com/asset/?id=12744806938"
+    logo.ScaleType = Enum.ScaleType.Fit
+    logo.AnchorPoint = Vector2.new(0, 1)
+    logo.BackgroundColor3 = Color3.fromHex("#FFFFFF")
+    logo.BackgroundTransparency = 1
+    logo.Position = UDim2.new(0, 5, 1, -25)
+    logo.Size = UDim2.fromOffset(275, 50)
+    logo.Parent = logoroot
+end
 
 --// this little line can detect when you spawn :)
 game:GetService("Workspace").CurrentCamera.ChildAdded:Connect(function()
@@ -50,7 +66,6 @@ game:GetService("Workspace").CurrentCamera.ChildAdded:Connect(function()
     end
 
     --// enemies
-
 end)
 
 --// world
@@ -68,4 +83,23 @@ game:GetService("Lighting").Changed:Connect(function()
     game:GetService("Lighting").OutdoorAmbient = config.world.outdoor_ambient
     game:GetService("Lighting").Ambient = config.world.ambient
     game:GetService("Lighting").ClockTime = config.world.time
+end)
+
+--// skybox
+game:GetService("Lighting").ChildAdded:Connect(function()
+    if game:GetService("Lighting"):FindFirstChild("SkyBox") then
+        game:GetService("Lighting").SkyBox:Destroy()
+    end
+
+    local sky = Instance.new("Sky")
+    sky.Parent = game:GetService("Lighting")
+    sky.Name = "SkyBox"
+    sky.MoonTextureId = config.world.sky.moontextureid
+    sky.SkyboxBk = config.world.sky.skyboxbk
+    sky.SkyboxDn = config.world.sky.skyboxdn
+    sky.SkyboxFt = config.world.sky.skyboxft
+    sky.SkyboxLf = config.world.sky.skyboxlf
+    sky.SkyboxRt = config.world.sky.skyboxrt
+    sky.SkyboxUp = config.world.sky.skyboxup
+    sky.SunTextureId = config.world.sky.suntextureid
 end)
