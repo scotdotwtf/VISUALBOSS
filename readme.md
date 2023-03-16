@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/specowos/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true" alt="visualbosslogo"/>
+  <img src="https://github.com/scotdotwtf/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true" alt="visualbosslogo"/>
 </p>
 
 # VISUALBOSS
@@ -55,7 +55,7 @@ getgenv().config = {
     }
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/specowos/VISUALBOSS/main/source.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/VISUALBOSS/main/source.lua"))()
 ```
 
 #### want cool stuff for your cool config? here's a config pack ill add to the gui
