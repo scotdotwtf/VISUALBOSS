@@ -1,11 +1,16 @@
 <p align="center">
-  <img src="https://github.com/scotdotwtf/VISUALBOSS/blob/main/assets/VISUALBOSSLOGOFULL.png?raw=true" alt="visualbosslogo"/>
+  <img src="./assets/visualboss_logo_v2.png" alt="visualboss logo"/>
 </p>
 
-# VISUALBOSS
-## It's FREE! *and open source
+# VISUALBOSS: PHANTOM FORCES VISUALS LIBRARY
+## It's FREE! *and open source *and in extreme development
 
-#### load with simple config: (v1.0)
+### Whats visualboss?
+- #### Visualboss is a library for phantom forces visuals
+
+# 1.0 IS SOON TO BE DEPRECATED AND THIS PROJECT WILL CHANGE MAJORLY 
+
+### running 1.0 with premade config
 ```lua
 -- EXPECT CHANGES! this is the first release of VIISUALBOSS with no ui or anything special.
 getgenv().config = {
@@ -58,7 +63,8 @@ getgenv().config = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/VISUALBOSS/main/source.lua"))()
 ```
 
-#### want cool stuff for your cool config? here's a config pack ill add to the gui
+### Assets for your config:
+
 ```lua
 --[[ GOOD FORCEFIELD OVERLAYS:
     lightning *best one* http://www.roblox.com/asset/?id=247707592
